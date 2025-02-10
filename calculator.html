@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Physics Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="title"><i class="fa-solid fa-atom"></i> Advanced Physics Calculator</h1>
+        <div class="calculator">
+            <label for="calculationType">
+                <i class="fa-solid fa-list"></i> Choose Calculation:
+            </label>
+            <select id="calculationType">
+                <option value="velocity">Velocity (v = d/t)</option>
+                <option value="force">Force (F = m × a)</option>
+                <option value="energy">Kinetic Energy (KE = ½ m × v²)</option>
+                <option value="work">Work (W = F × d)</option>
+                <option value="power">Power (P = W/t)</option>
+                <option value="momentum">Momentum (p = m × v)</option>
+                <option value="ohm">Ohm’s Law (V = I × R)</option>
+                <option value="pressure">Pressure (P = F/A)</option>
+                <option value="density">Density (ρ = m/V)</option>
+            </select>
+
+            <!-- Dynamic Input Fields -->
+            <div id="inputFields"></div>
+
+            <!-- Definition Text -->
+            <p id="definition" class="definition-text"></p>
+
+            <!-- Real World Example -->
+            <p id="realWorldExample" class="real-world-example"></p>
+
+            <button id="calculate">
+                <i class="fa-solid fa-calculator"></i> Calculate
+            </button>
+
+            <h3 id="result"></h3>
+        </div>
+    </main>
+  
+
+    <script src="javaScript.js"></script>
+</body>
+</html>
